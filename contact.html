@@ -1,233 +1,367 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Contact - Lenverde Construction Ltd.</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "tertiary-fixed-dim": "#bbc8d0",
-                      "on-error-container": "#93000a",
-                      "on-secondary": "#ffffff",
-                      "background": "#f7fafc",
-                      "outline": "#8b7168",
-                      "secondary-fixed-dim": "#b4cad6",
-                      "primary-fixed-dim": "#ffb59a",
-                      "on-background": "#181c1e",
-                      "on-tertiary-container": "#fbfdff",
-                      "primary": "#a23904",
-                      "surface-container-lowest": "#ffffff",
-                      "tertiary-fixed": "#d7e4ec",
-                      "primary-container": "#c3511e",
-                      "inverse-on-surface": "#eef1f3",
-                      "error": "#ba1a1a",
-                      "tertiary-container": "#6a767d",
-                      "surface-dim": "#d7dadc",
-                      "on-tertiary-fixed": "#111d23",
-                      "tertiary": "#515e64",
-                      "on-primary-fixed-variant": "#802a00",
-                      "surface-bright": "#f7fafc",
-                      "on-secondary-container": "#526772",
-                      "on-error": "#ffffff",
-                      "inverse-surface": "#2d3133",
-                      "on-secondary-fixed": "#071e27",
-                      "secondary-container": "#cfe6f2",
-                      "surface-container": "#ebeef0",
-                      "surface-container-highest": "#e0e3e5",
-                      "on-tertiary-fixed-variant": "#3c494f",
-                      "surface-tint": "#a53c06",
-                      "outline-variant": "#dfc0b5",
-                      "surface-variant": "#e0e3e5",
-                      "on-primary-fixed": "#370e00",
-                      "on-primary-container": "#fffbff",
-                      "primary-fixed": "#ffdbce",
-                      "on-secondary-fixed-variant": "#354a53",
-                      "on-surface": "#181c1e",
-                      "secondary": "#4c616c",
-                      "on-tertiary": "#ffffff",
-                      "surface": "#f7fafc",
-                      "surface-container-high": "#e5e9eb",
-                      "error-container": "#ffdad6",
-                      "inverse-primary": "#ffb59a",
-                      "on-primary": "#ffffff",
-                      "secondary-fixed": "#cfe6f2",
-                      "surface-container-low": "#f1f4f6",
-                      "on-surface-variant": "#58423a"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.125rem",
-                      "lg": "0.25rem",
-                      "xl": "0.5rem",
-                      "full": "0.75rem"
-              },
-              "spacing": {},
-              "fontFamily": {
-                      "headline": [
-                              "Space Grotesk"
-                      ],
-                      "body": [
-                              "Inter"
-                      ],
-                      "label": [
-                              "Inter"
-                      ]
-              }
-      },
-          },
-        }
-    </script>
-<style>
-        body {
-            background-color: theme('colors.background');
-            color: theme('colors.on-background');
-            font-family: theme('fontFamily.body');
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: theme('fontFamily.headline');
-        }
-    </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
+<html class="light" lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Contact - Lenverde Construction Ltd.</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <script id="tailwind-config">
+                tailwind.config = {
+                        darkMode: "class",
+                        theme: {
+                                extend: {
+                                        "colors": {
+                                                "tertiary-fixed-dim": "#bbc8d0",
+                                                "on-error-container": "#93000a",
+                                                "on-secondary": "#ffffff",
+                                                "background": "#f7fafc",
+                                                "outline": "#8b7168",
+                                                "secondary-fixed-dim": "#b4cad6",
+                                                "primary-fixed-dim": "#ffb59a",
+                                                "on-background": "#181c1e",
+                                                "on-tertiary-container": "#fbfdff",
+                                                "primary": "#a23904",
+                                                "surface-container-lowest": "#ffffff",
+                                                "tertiary-fixed": "#d7e4ec",
+                                                "primary-container": "#c3511e",
+                                                "inverse-on-surface": "#eef1f3",
+                                                "error": "#ba1a1a",
+                                                "tertiary-container": "#6a767d",
+                                                "surface-dim": "#d7dadc",
+                                                "on-tertiary-fixed": "#111d23",
+                                                "tertiary": "#515e64",
+                                                "on-primary-fixed-variant": "#802a00",
+                                                "surface-bright": "#f7fafc",
+                                                "on-secondary-container": "#526772",
+                                                "on-error": "#ffffff",
+                                                "inverse-surface": "#2d3133",
+                                                "on-secondary-fixed": "#071e27",
+                                                "secondary-container": "#cfe6f2",
+                                                "surface-container": "#ebeef0",
+                                                "surface-container-highest": "#e0e3e5",
+                                                "on-tertiary-fixed-variant": "#3c494f",
+                                                "surface-tint": "#a53c06",
+                                                "outline-variant": "#dfc0b5",
+                                                "surface-variant": "#e0e3e5",
+                                                "on-primary-fixed": "#370e00",
+                                                "on-primary-container": "#fffbff",
+                                                "primary-fixed": "#ffdbce",
+                                                "on-secondary-fixed-variant": "#354a53",
+                                                "on-surface": "#181c1e",
+                                                "secondary": "#4c616c",
+                                                "on-tertiary": "#ffffff",
+                                                "surface": "#f7fafc",
+                                                "surface-container-high": "#e5e9eb",
+                                                "error-container": "#ffdad6",
+                                                "inverse-primary": "#ffb59a",
+                                                "on-primary": "#ffffff",
+                                                "secondary-fixed": "#cfe6f2",
+                                                "surface-container-low": "#f1f4f6",
+                                                "on-surface-variant": "#58423a"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.125rem",
+                                                "lg": "0.25rem",
+                                                "xl": "0.5rem",
+                                                "full": "0.75rem"
+                                        },
+                                        "spacing": {},
+                                        "fontFamily": {
+                                                "headline": [
+                                                        "Space Grotesk"
+                                                ],
+                                                "body": [
+                                                        "Inter"
+                                                ],
+                                                "label": [
+                                                        "Inter"
+                                                ]
+                                        }
+                                },
+                        },
+                }
+        </script>
+        <style>
+                body {
+                        background-color: theme('colors.background');
+                        color: theme('colors.on-background');
+                        font-family: theme('fontFamily.body');
+                }
+
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                        font-family: theme('fontFamily.headline');
+                }
+        </style>
+        <style>
+                body {
+                        min-height: max(884px, 100dvh);
+                }
+        </style>
 </head>
+
 <body class="min-h-screen flex flex-col">
-<!-- TopAppBar -->
-<header class="bg-[#f7fafc] dark:bg-[#181c1e] text-[#a23904] dark:text-[#a23904] font-['Space_Grotesk'] tracking-tighter uppercase font-bold sticky top-0 border-b border-[#dfc0b5]/20 z-50">
-<div class="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center h-20">
-<a class="flex items-center gap-2 cursor-pointer active:scale-[0.98] transition-transform" href="index.html">
-<span class="material-symbols-outlined text-2xl" data-icon="precision_manufacturing">precision_manufacturing</span>
-<img alt="Logo" src="assets/images/logo.png" style="height:30px; display:inline-block; margin-right:8px; mix-blend-mode: multiply;"/><span class="text-2xl font-black tracking-tighter text-[#181c1e] dark:text-[#f7fafc]">Lenverde</span>
-</a>
-<nav class="hidden lg:flex gap-8"><a class="text-[#4c616c] dark:text-[#e0e3e5] font-medium hover:text-[#a23904] transition-colors duration-200" href="index.html">HOME</a><a class="text-[#4c616c] dark:text-[#e0e3e5] font-medium hover:text-[#a23904] transition-colors duration-200" href="about.html">ABOUT</a><a class="text-[#4c616c] dark:text-[#e0e3e5] font-medium hover:text-[#a23904] transition-colors duration-200" href="services.html">SERVICES</a><a class="text-[#4c616c] dark:text-[#e0e3e5] font-medium hover:text-[#a23904] transition-colors duration-200" href="equipment.html">EQUIPMENT</a><a class="text-[#4c616c] dark:text-[#e0e3e5] font-medium hover:text-[#a23904] transition-colors duration-200" href="projects.html">PROJECTS</a><a class="text-[#4c616c] dark:text-[#e0e3e5] font-medium hover:text-[#a23904] transition-colors duration-200" href="why-choose-us.html">WHY US</a><a class="text-[#a23904] border-b-2 border-[#a23904] pb-1 hover:text-[#a23904] transition-colors duration-200" href="contact.html">CONTACT</a></nav>
-<a class="bg-primary text-on-primary px-6 py-2 rounded font-label text-sm uppercase tracking-widest hover:bg-primary-container transition-colors active:scale-[0.98] hidden lg:block" href="contact.html">GET QUOTE</a>
-<button class="lg:hidden text-on-background focus:outline-none ml-2" id="mobile-menu-btn"><span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span></button></div>
-<div class="hidden fixed top-0 right-0 h-screen w-screen bg-[#f7fafc] z-50 flex-col items-center justify-center gap-8" id="mobile-menu"><button class="absolute top-6 right-6 text-on-background focus:outline-none" id="close-menu-btn"><span class="material-symbols-outlined text-4xl" data-icon="close">close</span></button><a class="mobile-nav-link text-2xl font-headline tracking-widest font-bold text-[#4c616c] hover:text-[#a23904]" href="index.html">HOME</a><a class="mobile-nav-link text-2xl font-headline tracking-widest font-bold text-[#4c616c] hover:text-[#a23904]" href="about.html">ABOUT</a><a class="mobile-nav-link text-2xl font-headline tracking-widest font-bold text-[#4c616c] hover:text-[#a23904]" href="services.html">SERVICES</a><a class="mobile-nav-link text-2xl font-headline tracking-widest font-bold text-[#4c616c] hover:text-[#a23904]" href="equipment.html">EQUIPMENT</a><a class="mobile-nav-link text-2xl font-headline tracking-widest font-bold text-[#4c616c] hover:text-[#a23904]" href="projects.html">PROJECTS</a><a class="mobile-nav-link text-2xl font-headline tracking-widest font-bold text-[#4c616c] hover:text-[#a23904]" href="why-choose-us.html">WHY US</a><a class="mobile-nav-link text-2xl font-headline tracking-widest font-bold text-[#a23904]" href="contact.html">CONTACT</a><a class="mt-4 bg-primary text-on-primary px-8 py-3 rounded font-label text-sm uppercase tracking-widest" href="contact.html">GET QUOTE</a></div></header>
-<!-- Main Content -->
-<main class="flex-grow container mx-auto px-4 md:px-8 py-16 md:py-24 max-w-7xl">
-<div class="mb-16">
-<h1 class="text-5xl md:text-7xl font-bold tracking-tight text-on-surface mb-4 uppercase scroll-reveal opacity-0 translate-y-8 transition-all duration-700 ease-out">Direct Line.</h1>
-<p class="text-lg text-secondary max-w-2xl font-body">Connect with our engineering division for project inquiries, technical specifications, or strategic partnerships.</p>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
-<!-- Contact Form (Left) -->
-<div class="lg:col-span-7 bg-surface-container-lowest border border-outline-variant p-8 md:p-12 rounded">
-<form class="space-y-8">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<div class="relative">
-<label class="block text-sm font-medium text-on-surface mb-2 font-label" for="firstName">FIRST NAME</label>
-<input class="block w-full bg-surface-container-lowest border border-outline rounded p-3 text-on-surface focus:ring-secondary focus:border-secondary sm:text-sm font-body transition-colors" id="firstName" placeholder="Enter your first name" type="text"/>
-</div>
-<div class="relative">
-<label class="block text-sm font-medium text-on-surface mb-2 font-label" for="lastName">LAST NAME</label>
-<input class="block w-full bg-surface-container-lowest border border-outline rounded p-3 text-on-surface focus:ring-secondary focus:border-secondary sm:text-sm font-body transition-colors" id="lastName" placeholder="Enter your last name" type="text"/>
-</div>
-</div>
-<div class="relative">
-<label class="block text-sm font-medium text-on-surface mb-2 font-label" for="company">COMPANY / ORGANIZATION</label>
-<input class="block w-full bg-surface-container-lowest border border-outline rounded p-3 text-on-surface focus:ring-secondary focus:border-secondary sm:text-sm font-body transition-colors" id="company" placeholder="Corporate entity" type="text"/>
-</div>
-<div class="relative">
-<label class="block text-sm font-medium text-on-surface mb-2 font-label" for="email">OFFICIAL EMAIL</label>
-<input class="block w-full bg-surface-container-lowest border border-outline rounded p-3 text-on-surface focus:ring-secondary focus:border-secondary sm:text-sm font-body transition-colors" id="email" placeholder="name@company.com" type="email"/>
-</div>
-<div class="relative">
-<label class="block text-sm font-medium text-on-surface mb-2 font-label" for="inquiryType">INQUIRY CLASSIFICATION</label>
-<select class="block w-full bg-surface-container-lowest border border-outline rounded p-3 text-on-surface focus:ring-secondary focus:border-secondary sm:text-sm font-body transition-colors appearance-none" id="inquiryType">
-<option>Project Consultation</option>
-<option>Equipment Procurement</option>
-<option>Safety &amp; Compliance</option>
-<option>General Information</option>
-</select>
-<div class="pointer-events-none absolute inset-y-0 right-0 top-7 flex items-center px-4 text-on-surface">
-<span class="material-symbols-outlined text-sm" data-icon="arrow_drop_down">arrow_drop_down</span>
-</div>
-</div>
-<div class="relative">
-<label class="block text-sm font-medium text-on-surface mb-2 font-label" for="message">PROJECT SPECIFICS</label>
-<textarea class="block w-full bg-surface-container-lowest border border-outline rounded p-3 text-on-surface focus:ring-secondary focus:border-secondary sm:text-sm font-body transition-colors resize-none" id="message" placeholder="Detail your requirements..." rows="5"></textarea>
-</div>
-<div class="pt-4">
-<button class="w-full bg-primary text-on-primary py-4 px-8 rounded font-headline font-bold tracking-tight uppercase hover:bg-primary-container transition-colors active:scale-[0.98]" type="submit">
-                            TRANSMIT INQUIRY
-                        </button>
-</div>
-</form>
-</div>
-<!-- Company Info (Right) -->
-<div class="lg:col-span-5 flex flex-col gap-8">
-<!-- Information Block -->
-<div class="bg-surface-container-low border border-outline-variant p-8 md:p-12 rounded h-full flex flex-col justify-between">
-<div>
-<h2 class="text-2xl font-bold text-on-surface mb-8 uppercase tracking-tight scroll-reveal opacity-0 translate-y-8 transition-all duration-700 ease-out">Headquarters</h2>
-<div class="space-y-6">
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-primary mt-1" data-icon="location_on" data-weight="fill">location_on</span>
-<div>
-<p class="text-sm font-label text-secondary uppercase tracking-widest mb-1">Facility Location</p>
-<p class="text-on-surface font-body leading-relaxed">
-                                        Plot 14, Cadastral Zone B11<br/>
-                                        Kaura District<br/>
-                                        Abuja, Nigeria
-                                    </p>
-</div>
-</div>
-<hr class="border-outline-variant"/>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-primary mt-1" data-icon="call" data-weight="fill">call</span>
-<div>
-<p class="text-sm font-label text-secondary uppercase tracking-widest mb-1">Comm Channel</p>
-<p class="text-on-surface font-body">+234 (0) 800 LENVERDE</p>
-</div>
-</div>
-<hr class="border-outline-variant"/>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-primary mt-1" data-icon="mail" data-weight="fill">mail</span>
-<div>
-<p class="text-sm font-label text-secondary uppercase tracking-widest mb-1">Digital Dispatch</p>
-<p class="text-on-surface font-body">operations@lenverde.com</p>
-</div>
-</div>
-</div>
-</div>
-<div class="mt-12 pt-8 border-t border-outline-variant">
-<p class="text-sm font-label text-secondary uppercase tracking-widest mb-4">Operational Status</p>
-<div class="inline-flex items-center gap-2 bg-surface-container border border-outline px-3 py-1.5 rounded">
-<span class="w-2 h-2 rounded-full bg-primary block"></span>
-<span class="text-xs font-bold text-on-surface uppercase tracking-tight">Active Duty: 0800 - 1800 WAT</span>
-</div>
-</div>
-</div>
-<!-- Map Placeholder -->
-<div class="bg-surface-container-low border border-outline-variant rounded h-64 md:h-80 relative overflow-hidden group">
-<iframe allowfullscreen="" class="w-full h-full border-0 absolute inset-0 grayscale hover:grayscale-0 transition-all duration-[1000ms]" loading="lazy" src="https://maps.google.com/maps?q=Plot%2014,%20Cadastral%20Zone%20B11,%20Kaura%20District,%20Abuja&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near"></iframe>
-<div class="absolute inset-0 border border-outline-variant m-4 pointer-events-none rounded"></div>
-<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-<span class="material-symbols-outlined text-primary text-4xl drop-shadow-md" data-icon="location_on" data-weight="fill">location_on</span>
-</div>
-</div>
-</div>
-</div>
-</main>
-<!-- Footer -->
-<footer class="bg-[#181c1e] dark:bg-[#000000] border-t border-[#dfc0b5]/10">
-<div class="max-w-7xl mx-auto px-4 md:px-8 py-8 md:py-12 flex flex-col md:flex-row justify-between items-start">
-<div class="mb-8 md:mb-0">
-<img alt="Logo" src="assets/images/logo.png" style="height:30px; display:inline-block; margin-right:8px; mix-blend-mode: multiply;"/><span class="text-[#f7fafc] font-['Space_Grotesk'] font-bold text-xl tracking-tighter block mb-4">Lenverde</span>
-<p class="font-['Inter'] text-xs tracking-widest uppercase text-[#e0e3e5]/60 max-w-xs">
-                    © 2024 LENVERDE CONSTRUCTION LTD. ENGINEERED PRECISION. ALL RIGHTS RESERVED.
-                </p>
-</div>
-<nav class="flex flex-wrap gap-x-8 gap-y-4"><a class="font-['Inter'] text-xs tracking-widest uppercase text-[#e0e3e5]/60 hover:text-[#f7fafc] transition-colors duration-300" href="projects.html">PROJECTS</a><a class="font-['Inter'] text-xs tracking-widest uppercase text-[#e0e3e5]/60 hover:text-[#f7fafc] transition-colors duration-300" href="equipment.html">EQUIPMENT</a><a class="font-['Inter'] text-xs tracking-widest uppercase text-[#e0e3e5]/60 hover:text-[#f7fafc] transition-colors duration-300" href="services.html">DRILLING</a><a class="font-['Inter'] text-xs tracking-widest uppercase text-[#e0e3e5]/60 hover:text-[#f7fafc] transition-colors duration-300" href="contact.html">CONTACT</a></nav>
-<p style="color: #a23904; font-size: 0.75rem; margin-top: 8px;"><a class="hover:text-[#f7fafc] transition-colors duration-300" href="mailto:elanconstruction@proton.me" style="color: inherit; text-decoration: underline; text-underline-offset: 4px;">elanconstruction@proton.me</a> | <a class="hover:text-[#f7fafc] transition-colors duration-300" href="mailto:lenverdesustainablesolution@proton.me" style="color: inherit; text-decoration: underline; text-underline-offset: 4px;">lenverdesustainablesolution@proton.me</a></p></div>
-</footer>
-<script src="js/main.js"></script></body></html>
+        <!-- TopAppBar -->
+        <header
+                class="bg-[#f7fafc] dark:bg-[#181c1e] text-[#a23904] dark:text-[#a23904] font-['Space_Grotesk'] tracking-tighter uppercase font-bold sticky top-0 border-b border-[#dfc0b5]/20 z-50">
+                <div class="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center h-20">
+                        <a class="flex items-center gap-2 cursor-pointer active:scale-[0.98] transition-transform"
+                                href="index.html">
+                                <span class="material-symbols-outlined text-2xl"
+                                        data-icon="precision_manufacturing">precision_manufacturing</span>
+                                <img alt="Logo" src="assets/images/logo.png"
+                                        style="height:30px; display:inline-block; margin-right:8px; mix-blend-mode: multiply;" /><span
+                                        class="text-2xl font-black tracking-tighter text-[#181c1e] dark:text-[#f7fafc]">Lenverde</span>
+                        </a>
+                        <nav class="hidden lg:flex gap-8"><a
+                                        class="text-[#4c616c] dark:text-[#e0e3e5] font-medium hover:text-[#a23904] transition-colors duration-200"
+                                        href="index.html">HOME</a><a
+                                        class="text-[#4c616c] dark:text-[#e0e3e5] font-medium hover:text-[#a23904] transition-colors duration-200"
+                                        href="about.html">ABOUT</a><a
+                                        class="text-[#4c616c] dark:text-[#e0e3e5] font-medium hover:text-[#a23904] transition-colors duration-200"
+                                        href="services.html">SERVICES</a><a
+                                        class="text-[#4c616c] dark:text-[#e0e3e5] font-medium hover:text-[#a23904] transition-colors duration-200"
+                                        href="equipment.html">EQUIPMENT</a><a
+                                        class="text-[#4c616c] dark:text-[#e0e3e5] font-medium hover:text-[#a23904] transition-colors duration-200"
+                                        href="projects.html">PROJECTS</a><a
+                                        class="text-[#4c616c] dark:text-[#e0e3e5] font-medium hover:text-[#a23904] transition-colors duration-200"
+                                        href="why-choose-us.html">WHY US</a><a
+                                        class="text-[#a23904] border-b-2 border-[#a23904] pb-1 hover:text-[#a23904] transition-colors duration-200"
+                                        href="contact.html">CONTACT</a></nav>
+                        <a class="bg-primary text-on-primary px-6 py-2 rounded font-label text-sm uppercase tracking-widest hover:bg-primary-container transition-colors active:scale-[0.98] hidden lg:block"
+                                href="contact.html">GET QUOTE</a>
+                        <button class="lg:hidden text-on-background focus:outline-none ml-2" id="mobile-menu-btn"><span
+                                        class="material-symbols-outlined text-3xl" data-icon="menu">menu</span></button>
+                </div>
+                <div class="hidden fixed top-0 right-0 h-screen w-screen bg-[#f7fafc] z-50 flex-col items-center justify-center gap-8"
+                        id="mobile-menu"><button class="absolute top-6 right-6 text-on-background focus:outline-none"
+                                id="close-menu-btn"><span class="material-symbols-outlined text-4xl"
+                                        data-icon="close">close</span></button><a
+                                class="mobile-nav-link text-2xl font-headline tracking-widest font-bold text-[#4c616c] hover:text-[#a23904]"
+                                href="index.html">HOME</a><a
+                                class="mobile-nav-link text-2xl font-headline tracking-widest font-bold text-[#4c616c] hover:text-[#a23904]"
+                                href="about.html">ABOUT</a><a
+                                class="mobile-nav-link text-2xl font-headline tracking-widest font-bold text-[#4c616c] hover:text-[#a23904]"
+                                href="services.html">SERVICES</a><a
+                                class="mobile-nav-link text-2xl font-headline tracking-widest font-bold text-[#4c616c] hover:text-[#a23904]"
+                                href="equipment.html">EQUIPMENT</a><a
+                                class="mobile-nav-link text-2xl font-headline tracking-widest font-bold text-[#4c616c] hover:text-[#a23904]"
+                                href="projects.html">PROJECTS</a><a
+                                class="mobile-nav-link text-2xl font-headline tracking-widest font-bold text-[#4c616c] hover:text-[#a23904]"
+                                href="why-choose-us.html">WHY US</a><a
+                                class="mobile-nav-link text-2xl font-headline tracking-widest font-bold text-[#a23904]"
+                                href="contact.html">CONTACT</a><a
+                                class="mt-4 bg-primary text-on-primary px-8 py-3 rounded font-label text-sm uppercase tracking-widest"
+                                href="contact.html">GET QUOTE</a></div>
+        </header>
+        <!-- Main Content -->
+        <main class="flex-grow container mx-auto px-4 md:px-8 py-16 md:py-24 max-w-7xl">
+                <div class="mb-16">
+                        <h1
+                                class="text-5xl md:text-7xl font-bold tracking-tight text-on-surface mb-4 uppercase scroll-reveal opacity-0 translate-y-8 transition-all duration-700 ease-out">
+                                Direct Line.</h1>
+                        <p class="text-lg text-secondary max-w-2xl font-body">Connect with our engineering division for
+                                project inquiries, technical specifications, or strategic partnerships.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
+                        <!-- Contact Form (Left) -->
+                        <div
+                                class="lg:col-span-7 bg-surface-container-lowest border border-outline-variant p-8 md:p-12 rounded">
+                                <form class="space-y-8">
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                                <div class="relative">
+                                                        <label class="block text-sm font-medium text-on-surface mb-2 font-label"
+                                                                for="firstName">FIRST NAME</label>
+                                                        <input class="block w-full bg-surface-container-lowest border border-outline rounded p-3 text-on-surface focus:ring-secondary focus:border-secondary sm:text-sm font-body transition-colors"
+                                                                id="firstName" placeholder="Enter your first name"
+                                                                type="text" />
+                                                </div>
+                                                <div class="relative">
+                                                        <label class="block text-sm font-medium text-on-surface mb-2 font-label"
+                                                                for="lastName">LAST NAME</label>
+                                                        <input class="block w-full bg-surface-container-lowest border border-outline rounded p-3 text-on-surface focus:ring-secondary focus:border-secondary sm:text-sm font-body transition-colors"
+                                                                id="lastName" placeholder="Enter your last name"
+                                                                type="text" />
+                                                </div>
+                                        </div>
+                                        <div class="relative">
+                                                <label class="block text-sm font-medium text-on-surface mb-2 font-label"
+                                                        for="company">COMPANY / ORGANIZATION</label>
+                                                <input class="block w-full bg-surface-container-lowest border border-outline rounded p-3 text-on-surface focus:ring-secondary focus:border-secondary sm:text-sm font-body transition-colors"
+                                                        id="company" placeholder="Corporate entity" type="text" />
+                                        </div>
+                                        <div class="relative">
+                                                <label class="block text-sm font-medium text-on-surface mb-2 font-label"
+                                                        for="email">OFFICIAL EMAIL</label>
+                                                <input class="block w-full bg-surface-container-lowest border border-outline rounded p-3 text-on-surface focus:ring-secondary focus:border-secondary sm:text-sm font-body transition-colors"
+                                                        id="email" placeholder="name@company.com" type="email" />
+                                        </div>
+                                        <div class="relative">
+                                                <label class="block text-sm font-medium text-on-surface mb-2 font-label"
+                                                        for="inquiryType">INQUIRY CLASSIFICATION</label>
+                                                <select class="block w-full bg-surface-container-lowest border border-outline rounded p-3 text-on-surface focus:ring-secondary focus:border-secondary sm:text-sm font-body transition-colors appearance-none"
+                                                        id="inquiryType">
+                                                        <option>Project Consultation</option>
+                                                        <option>Equipment Procurement</option>
+                                                        <option>Safety &amp; Compliance</option>
+                                                        <option>General Information</option>
+                                                </select>
+                                                <div
+                                                        class="pointer-events-none absolute inset-y-0 right-0 top-7 flex items-center px-4 text-on-surface">
+                                                        <span class="material-symbols-outlined text-sm"
+                                                                data-icon="arrow_drop_down">arrow_drop_down</span>
+                                                </div>
+                                        </div>
+                                        <div class="relative">
+                                                <label class="block text-sm font-medium text-on-surface mb-2 font-label"
+                                                        for="message">PROJECT SPECIFICS</label>
+                                                <textarea
+                                                        class="block w-full bg-surface-container-lowest border border-outline rounded p-3 text-on-surface focus:ring-secondary focus:border-secondary sm:text-sm font-body transition-colors resize-none"
+                                                        id="message" placeholder="Detail your requirements..."
+                                                        rows="5"></textarea>
+                                        </div>
+                                        <div class="pt-4">
+                                                <button class="w-full bg-primary text-on-primary py-4 px-8 rounded font-headline font-bold tracking-tight uppercase hover:bg-primary-container transition-colors active:scale-[0.98]"
+                                                        type="submit">
+                                                        TRANSMIT INQUIRY
+                                                </button>
+                                        </div>
+                                </form>
+                        </div>
+                        <!-- Company Info (Right) -->
+                        <div class="lg:col-span-5 flex flex-col gap-8">
+                                <!-- Information Block -->
+                                <div
+                                        class="bg-surface-container-low border border-outline-variant p-8 md:p-12 rounded h-full flex flex-col justify-between">
+                                        <div>
+                                                <h2
+                                                        class="text-2xl font-bold text-on-surface mb-8 uppercase tracking-tight scroll-reveal opacity-0 translate-y-8 transition-all duration-700 ease-out">
+                                                        Headquarters</h2>
+                                                <div class="space-y-6">
+                                                        <div class="flex items-start gap-4">
+                                                                <span class="material-symbols-outlined text-primary mt-1"
+                                                                        data-icon="location_on"
+                                                                        data-weight="fill">location_on</span>
+                                                                <div>
+                                                                        <p
+                                                                                class="text-sm font-label text-secondary uppercase tracking-widest mb-1">
+                                                                                Facility Location</p>
+                                                                        <p
+                                                                                class="text-on-surface font-body leading-relaxed">
+                                                                                Plot 14, Cadastral Zone B11<br />
+                                                                                Kaura District<br />
+                                                                                Abuja, Nigeria
+                                                                        </p>
+                                                                </div>
+                                                        </div>
+                                                        <hr class="border-outline-variant" />
+                                                        <div class="flex items-start gap-4">
+                                                                <span class="material-symbols-outlined text-primary mt-1"
+                                                                        data-icon="call" data-weight="fill">call</span>
+                                                                <div>
+                                                                        <p
+                                                                                class="text-sm font-label text-secondary uppercase tracking-widest mb-1">
+                                                                                Comm Channel</p>
+                                                                        <p class="text-on-surface font-body">+234 (0)
+                                                                                800 LENVERDE</p>
+                                                                </div>
+                                                        </div>
+                                                        <hr class="border-outline-variant" />
+                                                        <div class="flex items-start gap-4">
+                                                                <span class="material-symbols-outlined text-primary mt-1"
+                                                                        data-icon="mail" data-weight="fill">mail</span>
+                                                                <div>
+                                                                        <p
+                                                                                class="text-sm font-label text-secondary uppercase tracking-widest mb-1">
+                                                                                Digital Dispatch</p>
+                                                                        <p class="text-on-surface font-body">
+                                                                                <a
+                                                                                        href="mailto:elanconstruction@proton.me">elanconstruction@proton.me</a>
+                                                                        </p>
+                                                                        <p class="text-on-surface font-body">
+                                                                                <a
+                                                                                        href="mailto:lenverdesustainablesolution@proton.me">lenverdesustainablesolution@proton.me</a>
+                                                                        </p>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="mt-12 pt-8 border-t border-outline-variant">
+                                                <p
+                                                        class="text-sm font-label text-secondary uppercase tracking-widest mb-4">
+                                                        Operational Status</p>
+                                                <div
+                                                        class="inline-flex items-center gap-2 bg-surface-container border border-outline px-3 py-1.5 rounded">
+                                                        <span class="w-2 h-2 rounded-full bg-primary block"></span>
+                                                        <span
+                                                                class="text-xs font-bold text-on-surface uppercase tracking-tight">Active
+                                                                Duty: 0800 - 1800 WAT</span>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- Map Placeholder -->
+                                <div
+                                        class="bg-surface-container-low border border-outline-variant rounded h-64 md:h-80 relative overflow-hidden group">
+                                        <iframe allowfullscreen=""
+                                                class="w-full h-full border-0 absolute inset-0 grayscale hover:grayscale-0 transition-all duration-[1000ms]"
+                                                loading="lazy"
+                                                src="https://maps.google.com/maps?q=Plot%2014,%20Cadastral%20Zone%20B11,%20Kaura%20District,%20Abuja&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near"></iframe>
+                                        <div
+                                                class="absolute inset-0 border border-outline-variant m-4 pointer-events-none rounded">
+                                        </div>
+                                        <div
+                                                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                                <span class="material-symbols-outlined text-primary text-4xl drop-shadow-md"
+                                                        data-icon="location_on" data-weight="fill">location_on</span>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-[#181c1e] dark:bg-[#000000] border-t border-[#dfc0b5]/10">
+                <div
+                        class="max-w-7xl mx-auto px-4 md:px-8 py-8 md:py-12 flex flex-col md:flex-row justify-between items-start">
+                        <div class="mb-8 md:mb-0">
+                                <img alt="Logo" src="assets/images/logo.png"
+                                        style="height:30px; display:inline-block; margin-right:8px; mix-blend-mode: multiply;" /><span
+                                        class="text-[#f7fafc] font-['Space_Grotesk'] font-bold text-xl tracking-tighter block mb-4">Lenverde</span>
+                                <p class="font-['Inter'] text-xs tracking-widest uppercase text-[#e0e3e5]/60 max-w-xs">
+                                        © 2024 LENVERDE CONSTRUCTION LTD. ENGINEERED PRECISION. ALL RIGHTS RESERVED.
+                                </p>
+                        </div>
+                        <nav class="flex flex-wrap gap-x-8 gap-y-4"><a
+                                        class="font-['Inter'] text-xs tracking-widest uppercase text-[#e0e3e5]/60 hover:text-[#f7fafc] transition-colors duration-300"
+                                        href="projects.html">PROJECTS</a><a
+                                        class="font-['Inter'] text-xs tracking-widest uppercase text-[#e0e3e5]/60 hover:text-[#f7fafc] transition-colors duration-300"
+                                        href="equipment.html">EQUIPMENT</a><a
+                                        class="font-['Inter'] text-xs tracking-widest uppercase text-[#e0e3e5]/60 hover:text-[#f7fafc] transition-colors duration-300"
+                                        href="services.html">DRILLING</a><a
+                                        class="font-['Inter'] text-xs tracking-widest uppercase text-[#e0e3e5]/60 hover:text-[#f7fafc] transition-colors duration-300"
+                                        href="contact.html">CONTACT</a></nav>
+                        <p style="color: #a23904; font-size: 0.75rem; margin-top: 8px;"><a
+                                        class="hover:text-[#f7fafc] transition-colors duration-300"
+                                        href="mailto:elanconstruction@proton.me"
+                                        style="color: inherit; text-decoration: underline; text-underline-offset: 4px;">elanconstruction@proton.me</a>
+                                | <a class="hover:text-[#f7fafc] transition-colors duration-300"
+                                        href="mailto:lenverdesustainablesolution@proton.me"
+                                        style="color: inherit; text-decoration: underline; text-underline-offset: 4px;">lenverdesustainablesolution@proton.me</a>
+                        </p>
+                </div>
+        </footer>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
